@@ -2,13 +2,6 @@ Rails.application.routes.draw do
 
   devise_for :innovators
 
-  # devise_scope :innovator do
-    # get "sign_in", to: "devise/sessions#new"
-    # get "sign_out", to: "devise/sessions#destroy"
-  # end
-
-
-
   resources :comments
 
   resources :challenges
