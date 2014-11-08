@@ -1,17 +1,18 @@
+<section class ="topnav">
+
+      <h3>Open</h3><a href="#"><img src="/assets/images/ga-lockup-logo-9d95d5d0a1c966540edaedcb440b1963.jpg"></a>
+      <ul>
+        <li><a href="#">On Campus</a></li>
+        <li><a href="#">Online</a></li>
+        <li><a href="#">Corporate Training</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
+    </section>
+<div class="wrapper">
 <h1>Listing challenges</h1>
-
 <table>
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Title</th>
-      <th>Body</th>
-      <th>Vote</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<tbody>
     <% @challenges.each do |challenge| %>
       <tr>
         <td><%= challenge.date %></td>
@@ -26,6 +27,25 @@
   </tbody>
 </table>
 
+
+<!--   <tbody>
+    <tbody>
+      <tr>
+        <td>srl08</td>
+        <td>I am a student in WDI3 based out of Washington, D.C.</td>
+        <td></td>
+        <td>FEWD, WDI</td>
+        <td>ROR, Javascript, Html, CSS</td>
+        <td><a href="/innovators/1">Show</a></td>
+        <td><a href="/innovators/1/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" data-method="delete" href="/innovators/1" rel="nofollow">Destroy</a></td>
+      </tr>
+  </tbody>
+  </tbody>
+</table> -->
+
 <br>
 
-<%= link_to 'New Challenge', new_challenge_path %>
+<a href="/challenges/new">New Challenge</a>
+
+</div>
