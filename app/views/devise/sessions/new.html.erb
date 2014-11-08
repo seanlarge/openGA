@@ -1,17 +1,51 @@
 <h2>Log in</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, autofocus: true %></div>
 
-  <div><%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %></div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-  <% end -%>
-
-  <div><%= f.submit "Log in" %></div>
-<% end %>
 
 <%= render "devise/shared/links" %>
+
+<div class="wrapper">
+  <div class="intro">
+    <h1>Pitch. Collaborate. Conquer.</h1>
+    <img alt="Icon" src="/assets/signup-image.jpg">
+    <h4>Steps to get involved:</h4>
+      <ul>
+        <li>>Find a challenge</li>
+        <li>>Collaborate</li>
+        <li>>Be a Hero!</li>
+      </ul>
+      <h5>What is openGA? (What is a Challenge?)</h5>
+      <p>De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum </p>
+      <h5>Why do I care?</h5>
+      <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia?  </p>
+      <a href="#">Learn More</a>
+    <div class="littleActionBox">
+
+      <h2>Let's Get Started</h2>
+
+      <form accept-charset="UTF-8" action="/innovators/sign_in" class="new_innovator" id="new_innovator" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="7rirJF/FfQPiSNAgm7F5ntDefzZXaSM1+bG/9jHdoAw=" /></div>
+        <div><label for="innovator_email">Email</label><br />
+        <input autofocus="autofocus" id="innovator_email" name="innovator[email]" type="email" value="" /></div>
+
+        <div><label for="innovator_password">Password</label><br />
+          <input autocomplete="off" id="innovator_password" name="innovator[password]" type="password" /></div>
+
+          <div><input name="innovator[remember_me]" type="hidden" value="0" /><input id="innovator_remember_me" name="innovator[remember_me]" type="checkbox" value="1" /> <label for="innovator_remember_me">Remember me</label></div>
+
+        <div><input name="commit" type="submit" value="Log in" /></div>
+      </form>
+
+        <a href="/innovators/sign_up">Sign up</a><br />
+
+        <a href="/innovators/password/new">Forgot your password?</a><br />
+
+
+
+
+      </div>
+  </div>
+  <ul>
+    <li><img alt="Icon" src="/assets/hammer.png"/></li>
+    <li><img alt="Icon" src="/assets/hammer.png"/></li>
+  </ul>
+ </div>

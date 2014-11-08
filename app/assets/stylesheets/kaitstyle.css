@@ -7,7 +7,7 @@ body {
 
 .topnav {
 	background: #1F1F14;
-	height: 55px;
+	height: 49px;
 	position: absolute;
 			top: 0px;
 			right: 0px;
@@ -26,14 +26,14 @@ body {
 	height: 35px;
 	position: absolute;
 			top: 7px;
-	
+
 }
 
 	.topnav ul {
 		z-index: .1;
 		text-align: right;
 		height: 35px;
-		
+
 		margin: 0;
 		padding: 0;
 		padding-top: 10px;
