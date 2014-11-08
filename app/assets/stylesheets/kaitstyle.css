@@ -45,23 +45,25 @@ body {
 
 	.topnav ul li {
 		display: inline;
-		padding-left: 65px;
-		padding-right: 65px;
+		padding-right: 10px;
 	}
 
 	.topnav li a {
 		text-decoration: none;
-		text-transform: uppercase;
 		font-weight: 600;
 		font-size: 17px;
 		color: #ffffff;
 		margin-top: 200px;
+		padding: 5px;
+		padding-top: 17px;
+		padding-bottom: 17px;
 
 	}
 
 	.topnav li a:hover {
 		text-decoration: none;
 		color: #FF0057;
+		background: #ffffff;
 
 
 	}
@@ -86,11 +88,54 @@ body {
 	padding: 18px;
 	margin: 50px;
 }
+.littleActionBox {
+	background: #ebebeb;
+	padding: 18px;
+	margin: 50px;
+	width: 30%;
+	position: absolute;
+			top: 200px;
+			right: 0px;
+			/*left: 0px;*/
+}
 
 h1 {
   text-align: center;
   font-family: 'Oswald', Impact, Arial;
   text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Oswald', Impact, Arial;
+  text-transform: uppercase;
+}
+
+h4 {
+	font-family: Georgia;
+}
+
+h5 {
+	font-family: 'Oswald';
+	font-size: 15px;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+a {
+	color:#000000;
+}
+
+input[type=submit]{
+	background: #fad400;
+	font-family: Helvetica-bold;
+	font-size: 18px;
+	margin: 30px;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 
