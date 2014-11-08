@@ -1,0 +1,27 @@
+<h1>Listing innovators_challenges</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Innovator</th>
+      <th>Challenge</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @innovators_challenges.each do |innovators_challenge| %>
+      <tr>
+        <td><%= innovators_challenge.innovator_id %></td>
+        <td><%= innovators_challenge.challenge_id %></td>
+        <td><%= link_to 'Show', innovators_challenge %></td>
+        <td><%= link_to 'Edit', edit_innovators_challenge_path(innovators_challenge) %></td>
+        <td><%= link_to 'Destroy', innovators_challenge, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Innovators challenge', new_innovators_challenge_path %>

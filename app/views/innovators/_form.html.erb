@@ -1,0 +1,37 @@
+<%= form_for(@innovator) do |f| %>
+  <% if @innovator.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@innovator.errors.count, "error") %> prohibited this innovator from being saved:</h2>
+
+      <ul>
+      <% @innovator.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_name %><br>
+    <%= f.text_field :user_name %>
+  </div>
+  <div class="field">
+    <%= f.label :about_me %><br>
+    <%= f.text_field :about_me %>
+  </div>
+  <div class="field">
+    <%= f.label :links %><br>
+    <%= f.text_field :links %>
+  </div>
+  <div class="field">
+    <%= f.label :classes_taken %><br>
+    <%= f.text_field :classes_taken %>
+  </div>
+  <div class="field">
+    <%= f.label :technical_skills %><br>
+    <%= f.text_field :technical_skills %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

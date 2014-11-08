@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User name:</strong>
+  <%= @innovator.user_name %>
+</p>
+
+<p>
+  <strong>About me:</strong>
+  <%= @innovator.about_me %>
+</p>
+
+<p>
+  <strong>Links:</strong>
+  <%= @innovator.links %>
+</p>
+
+<p>
+  <strong>Classes taken:</strong>
+  <%= @innovator.classes_taken %>
+</p>
+
+<p>
+  <strong>Technical skills:</strong>
+  <%= @innovator.technical_skills %>
+</p>
+
+<%= link_to 'Edit', edit_innovator_path(@innovator) %> |
+<%= link_to 'Back', innovators_path %>

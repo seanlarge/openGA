@@ -1,0 +1,33 @@
+<h1>Listing innovators</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User name</th>
+      <th>About me</th>
+      <th>Links</th>
+      <th>Classes taken</th>
+      <th>Technical skills</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @innovators.each do |innovator| %>
+      <tr>
+        <td><%= innovator.user_name %></td>
+        <td><%= innovator.about_me %></td>
+        <td><%= innovator.links %></td>
+        <td><%= innovator.classes_taken %></td>
+        <td><%= innovator.technical_skills %></td>
+        <td><%= link_to 'Show', innovator %></td>
+        <td><%= link_to 'Edit', edit_innovator_path(innovator) %></td>
+        <td><%= link_to 'Destroy', innovator, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Innovator', new_innovator_path %>
