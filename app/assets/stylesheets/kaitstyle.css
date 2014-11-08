@@ -7,26 +7,26 @@ body {
 
 .topnav {
 	background: #1F1F14;
-	height: 45px;
+	height: 55px;
 	position: absolute;
 			top: 0px;
 			right: 0px;
 			left: 0px;
 }
 
-.topnav h3 {
+/*.topnav h3 {
 	color: #ffffff;
 	position: absolute;
 			top: -7px;
 			left: 15px;
-}
+}*/
 
 .topnav img {
-	padding-left: 90px;
+	padding-left: 20px;
 	height: 35px;
 	position: absolute;
-			top: 3px;
-			left: 7px;
+			top: 7px;
+	
 }
 
 	.topnav ul {
@@ -38,7 +38,7 @@ body {
 		padding: 0;
 		padding-top: 10px;
 		position: absolute;
-			top: 0px;
+			top: 5px;
 			right: 0px;
 			left: 0px;
 	}
@@ -83,18 +83,23 @@ body {
 	padding: 30px;
 }
 
+.intro {
+	background: #ebebeb;
+	padding: 70px;
+}
+
 .actionBox {
 	background: #ebebeb;
 	padding: 18px;
 	margin: 50px;
 }
 .littleActionBox {
-	background: #ebebeb;
-	padding: 18px;
+	background: #ffffff;
+	padding: 12px;
 	margin: 50px;
 	width: 30%;
 	position: absolute;
-			top: 200px;
+			top: 250px;
 			right: 0px;
 			/*left: 0px;*/
 }
@@ -124,18 +129,36 @@ ul li {
 	list-style-type: none;
 }
 
+ul li img {
+	height:150px;
+}
+
 a {
 	color:#000000;
+	font-size: 12px;
 }
 
 input[type=submit]{
 	background: #fad400;
 	font-family: Helvetica-bold;
 	font-size: 18px;
-	margin: 30px;
+	margin: 20px;
 	padding: 10px;
 	padding-left: 30px;
 	padding-right: 30px;
+}
+
+thead {
+	background: #ebebeb;
+
+}
+
+td {
+	padding: 20px;
+}
+
+p{
+	margin-right: 300px;
 }
 
 
