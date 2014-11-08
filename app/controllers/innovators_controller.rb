@@ -1,5 +1,5 @@
 class InnovatorsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_innovator!
   before_action :set_innovator, only: [:show, :edit, :update, :destroy]
 
   # GET /innovators

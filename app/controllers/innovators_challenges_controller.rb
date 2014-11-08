@@ -1,5 +1,5 @@
 class InnovatorsChallengesController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_innovator!
   before_action :set_innovators_challenge, only: [:show, :edit, :update, :destroy]
 
   # GET /innovators_challenges
