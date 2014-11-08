@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Innovator:</strong>
+  <%= @innovators_challenge.innovator_id %>
+</p>
+
+<p>
+  <strong>Challenge:</strong>
+  <%= @innovators_challenge.challenge_id %>
+</p>
+
+<%= link_to 'Edit', edit_innovators_challenge_path(@innovators_challenge) %> |
+<%= link_to 'Back', innovators_challenges_path %>
