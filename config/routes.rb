@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
-  devise_for :innovators
+devise_for :innovators, :controllers => { :registrations => "innovators" }
+  devise_scope :user do
+    get 'login', to: "devise/sessions#new", as: "login"
+    get 'logout', to: "devise/sessions#destroy", as: "logout"
+    get 'logout', to: "innovators/sessions#destroy", as: "logout"
+    get 'signup', to: "innovators#new", as: "signup"
+    match '/innovators/:id', :to => 'innovators#show', :as => :user
+  end
   resources :comments
 
   resources :challenges
@@ -7,7 +14,7 @@ Rails.application.routes.draw do
   resources :innovators_challenges
 
   resources :innovators
-
+  devise_for :innovators, path: "auth", path_names: { sign_in: 'login', sign_out: 'logout', password: 'secret', confirmation: 'verification', unlock: 'unblock', registration: 'register', sign_up: 'cmon_let_me_in' }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
