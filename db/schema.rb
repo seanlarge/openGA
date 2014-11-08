@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141108034026) do
+ActiveRecord::Schema.define(version: 20141108035344) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,7 +43,20 @@ ActiveRecord::Schema.define(version: 20141108034026) do
     t.string   "technical_skills"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.inet     "current_sign_in_ip"
+    t.inet     "last_sign_in_ip"
   end
+
+  add_index "innovators", ["email"], name: "index_innovators_on_email", unique: true, using: :btree
+  add_index "innovators", ["reset_password_token"], name: "index_innovators_on_reset_password_token", unique: true, using: :btree
 
   create_table "innovators_challenges", force: true do |t|
     t.integer  "innovator_id"
