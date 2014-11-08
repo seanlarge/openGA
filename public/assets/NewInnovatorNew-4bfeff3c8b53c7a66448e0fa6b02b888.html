@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OpenGA</title>
+ <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link data-turbolinks-track="true" href="../stylesheets/kaitstyle.css?body=1" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="/assets/jquery.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/jquery_ujs.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/turbolinks.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/challenges.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/comments.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/innovators.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/innovators_challenges.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/application.js?body=1"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="O5rgIKVRrNlYSly/5v+be39bDQWF6L9ognOamgysxes=" name="csrf-token" />
+   <p class="notice"></p>
+   <p class="alert"></p>
+          <li><a data-method="delete" href="/innovators/sign_out" rel="nofollow">Log out</a></li>
+</head>
+<body>
+  <section class ="topnav">
+      
+      <h3>(Open</h3><a href="#"><img src="../images/ga-lockup-logo-9d95d5d0a1c966540edaedcb440b1963.jpg"></a>
+      <ul>
+        <li><a href="#">On Campus</a></li>
+        <li><a href="#">Online</a></li>
+        <li><a href="#">Corporate Training</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
+    </section>
+
+<div class="wrapper">
+  <div class="actionBox">
+
+    <h1>New innovator</h1>
+
+    <form accept-charset="UTF-8" action="/innovators" class="new_innovator" id="new_innovator" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="O5rgIKVRrNlYSly/5v+be39bDQWF6L9ognOamgysxes=" /></div>
+
+      <div class="field">
+        <label for="innovator_user_name">User name</label><br>
+        <input id="innovator_user_name" name="innovator[user_name]" type="text" />
+      </div>
+      <div class="field">
+        <label for="innovator_about_me">About me</label><br>
+        <input id="innovator_about_me" name="innovator[about_me]" type="text" />
+      </div>
+      <div class="field">
+        <label for="innovator_links">Links</label><br>
+        <input id="innovator_links" name="innovator[links]" type="text" />
+      </div>
+      <div class="field">
+        <label for="innovator_classes_taken">Classes taken</label><br>
+        <input id="innovator_classes_taken" name="innovator[classes_taken]" type="text" />
+      </div>
+      <div class="field">
+        <label for="innovator_technical_skills">Technical skills</label><br>
+        <input id="innovator_technical_skills" name="innovator[technical_skills]" type="text" />
+      </div>
+      <div class="actions">
+        <input name="commit" type="submit" value="Create Innovator" />
+      </div>
+    </form>
+
+    <a href="/innovators">Back</a>
+
+  </div>
+ </div>
+</body>
+</html>

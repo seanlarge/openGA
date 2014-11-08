@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OpenGA</title>
+ <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link data-turbolinks-track="true" href="../stylesheets/kaitstyle.css?body=1" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="/assets/jquery.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/jquery_ujs.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/turbolinks.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/challenges.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/comments.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/innovators.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/innovators_challenges.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/application.js?body=1"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="Fu5UMUFGvUaH3yy5AoTIQm0/2oqlsUnt2JowmTnXYUo=" name="csrf-token" />
+   <p class="notice"></p>
+   <p class="alert"></p>
+</head>
+<body>
+  <section class ="topnav">
+      <h3>(Open</h3>
+      <a href="#"><img src="../images/open-Final-white.png"></a>
+     <ul>
+        <li><a href="#">On Campus</a></li>
+        <li><a href="#">Online</a></li>
+        <li><a href="#">Corporate Training</a></li>
+      </ul>
+    </section>
+<div class="wrapper">
+<h1>Listing challenges</h1>
+<table>
+<tbody>
+    <% @challenges.each do |challenge| %>
+      <tr>
+        <td><%= challenge.date %></td>
+        <td><%= challenge.title %></td>
+        <td><%= challenge.body %></td>
+        <td><%= challenge.vote %></td>
+        <td><%= link_to 'Show', challenge %></td>
+        <td><%= link_to 'Edit', edit_challenge_path(challenge) %></td>
+        <td><%= link_to 'Destroy', challenge, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+  <tbody>
+    <tbody>
+      <tr>
+        <td>srl08</td>
+        <td>I am a student in WDI3 based out of Washington, D.C.</td>
+        <td></td>
+        <td>FEWD, WDI</td>
+        <td>ROR, Javascript, Html, CSS</td>
+        <td><a href="/innovators/1">Show</a></td>
+        <td><a href="/innovators/1/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" data-method="delete" href="/innovators/1" rel="nofollow">Destroy</a></td>
+      </tr>
+  </tbody>
+  </tbody>
+</table>
+
+<br>
+
+<a href="/challenges/new">New Challenge</a>
+
+</div>
+</body>
+</html>
