@@ -1,28 +1,16 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Open GA is an open innovation platform that allows General Assembly students around the world to connect and collectively research, ideate and produce solutions to trending topics in technology and design. We pitched Open GA at the first ever General Assembly Student Hackathon and finished 2nd - by one point - out of 14 total projects. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Stack:
+HTML
+CSS
+Bootstrap
+Javascript 
+jquery 
+Ruby
+Rails
+postgreSQL
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+https://damp-hamlet-2692.herokuapp.com/innovators/sign_in
