@@ -3,13 +3,13 @@
 Open GA is an open innovation platform that allows General Assembly students around the world to connect and collectively research, ideate and produce solutions to trending topics in technology and design. We pitched Open GA at the first ever General Assembly Student Hackathon and finished 2nd - by one point - out of 14 total projects. 
 
 Stack:
-HTML
-CSS
-Bootstrap
-Javascript 
-jquery 
-Ruby
-Rails
+HTML,
+CSS,
+Bootstrap,
+Javascript, 
+Jquery, 
+Ruby,
+Rails,
 postgreSQL
 
 
